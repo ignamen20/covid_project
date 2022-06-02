@@ -51,7 +51,7 @@ FROM coviddeaths dea
 JOIN covidvaccinations vac
 	ON dea.location = vac.location
 	AND dea.date = vac.date
-ORDER BY 3,2
+ORDER BY 3,2;
 
 #looking at people vaccinated and population
 SELECT dea.continent, dea.location, dea.date, vac.population, dea.new_vaccinations
